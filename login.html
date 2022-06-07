@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to right, #0066ff 0%, #6600cc 100%);
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: auto;
+            margin-top: 200px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 50px 30px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: white;
+        }
+        input{
+            margin-top: 30px;
+            border: 0;
+            height: 50px;
+            font-size: 20px;
+        }
+        #password,#email{
+            border-bottom: 1px solid gray;
+            padding-left: 10px;
+        }
+        label{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        input + p{
+            margin-top: 40px;
+        }
+        #account{
+            margin-top: -5px;
+        }
+        #submit{
+            background: linear-gradient(to right, #0066ff 0%, #6600cc 100%);
+            cursor: pointer;
+            color: white;
+        }
+        a{
+            color: rgb(29, 110, 233);
+            text-decoration: none;
+        }
+        p{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Login</label>
+        <input type="email" id="email" placeholder="Email">
+        
+        <input type="password" id="password" placeholder="Password">
+        
+        <input value="Login" type="submit" id="submit">
+        <p>forget <a href="">Password</a>?</p>
+        <p id="account">Don't have an account? <a href="">Sign up</a></p>
+    </form>
+    
+</body>
+</html>
+
+<script>
+    // document.querySelector("")
+</script>
