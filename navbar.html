@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #navbar{
+            width: 98%;
+            margin: auto;
+            display: flex; 
+            background-color: rgb(3, 3, 68);
+            color: white;
+            height: 50px;
+            align-items: center;
+            border-radius: 10px;
+        }
+        #navbar>div{
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+        }
+        #navbar>div>div{
+          display: flex;
+          justify-content: space-around;
+           width: 35%;
+        }
+        #navbar>div>div:first-child{
+            width: 10%;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="navbar"></div>
+  </body>
+</html>
+<script>
+  var box1 = document.createElement("div");
+
+  var reebok = document.createElement("div");
+  reebok.textContent= "Reebok"
+
+  var options = document.createElement("div");
+
+  var men = document.createElement("div");
+  men.textContent= "Men"
+  var women = document.createElement("div");
+  women.textContent="Women"
+  var login = document.createElement("a");
+  login.textContent= "Login"
+  login.setAttribute("href","login.html")
+  login.style.color = "white"
+  var signup = document.createElement("a");
+  signup.textContent="Signup"
+  signup.setAttribute("href","signup.html")
+  signup.style.color = "white"
+
+  options.append(men, women, login, signup);
+  box1.append(reebok,options)
+  document.querySelector("#navbar").append(box1)
+</script>
