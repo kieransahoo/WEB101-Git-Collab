@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens</title>
+    <style>
+         #navbar{
+            width: 98%;
+            margin: auto;
+            display: flex; 
+            background-color: rgb(3, 3, 68);
+            color: white;
+            height: 50px;
+            align-items: center;
+            border-radius: 10px;
+        }
+        #navbar>div{
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+        }
+        #navbar>div>div{
+          display: flex;
+          justify-content: space-around;
+           width: 35%;
+        }
+        #navbar>div>div:first-child{
+            width: 10%;
+        }
+        #container{
+            width: 70%;
+            margin: auto;
+            display: flex;
+            gap: 20px;
+            margin-top: 48px;
+        }
+        
+        img{
+            width: 100%;
+        }
+        h3,p{
+            margin-left: 12px;
+        }
+        span{
+            color: green;
+        }
+        p,s{
+            color: grey;
+        }
+        p{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="container">
+        <div>
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11780968/2020/4/3/11591b03-97f1-4907-b735-906984c4bcd61585905051096HIGHLANDERMenGreenWhiteSlimFitPrintedCasualShirt1.jpg" alt="">
+                <h3>Highlander</h3>
+            <p>Men Green & White Slim Fit Printed Casual Shirt </p>
+            <h3>₹ 459 <s>₹1499</s><span> -76%</span></h3>
+        </div>
+        <div>
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10673544/2019/9/24/6b9c7688-7ca2-4d11-9e5b-a3745ecd8f761569310358973-The-Indian-Garage-Co-Men-Shirts-8481569310357131-1.jpg" alt="">
+            <h3>The Indian Garage Co</h3>
+            <p>Men White & Teal Blue Slim Fit Striped Casual Shirt</p>
+            <h3>₹ 659 <s>₹1499</s><span> -76%</span></h3>
+        </div>
+        <div>
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11326686/2020/2/24/ea16898e-7a72-4989-9699-16c16d6f76591582542303146-Roadster-Men-Shirts-6021582542301356-1.jpg" alt="">
+            <h3>Roadster</h3>
+            <p>Men Maroon & Black Checked Pure Cotton Sustainable Casual Shirt</p>
+            <h3>₹ 559 <s>₹1499</s><span> -76%</span></h3>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var box1 = document.createElement("div");
+  
+    var reebok = document.createElement("div");
+    reebok.textContent= "Reebok"
+  
+    var options = document.createElement("div");
+  
+    var men = document.createElement("div");
+    men.textContent= "Men"
+    var women = document.createElement("div");
+    women.textContent="Women"
+    var login = document.createElement("a");
+    login.textContent= "Login"
+    login.setAttribute("href","login.html")
+    login.style.color = "white"
+    var signup = document.createElement("a");
+    signup.textContent="Signup"
+    signup.setAttribute("href","signup.html")
+    signup.style.color = "white"
+  
+    options.append(men, women, login, signup);
+    box1.append(reebok,options)
+    document.querySelector("#navbar").append(box1)
+  </script>
